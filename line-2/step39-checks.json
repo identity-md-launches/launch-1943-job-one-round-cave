@@ -1,0 +1,13 @@
+{
+  "transition_tests": 14,
+  "engine_tests": 17,
+  "documented_trace_demo_exit": 1,
+  "documented_trace_demo_keys": [
+    "1",
+    "2",
+    "3"
+  ],
+  "goal_unchanged": true,
+  "older_records_unchanged": true,
+  "image_checks": "step39-image-checks.json"
+}

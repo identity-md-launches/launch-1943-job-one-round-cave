@@ -38,10 +38,29 @@ engine's literal semantics; observed uniqueness does not establish identity.
 Key changes appear as a removal and addition. Use CSV Key Audit first when
 identity or missing keys need review, and CSV Reconcile for individual records.
 
-Reports include the selected data values and header names, but no key values,
-record identities or paths. This is **not anonymization**. JSON escapes control
+By default, reports include the selected data values and header names, but no
+key values, record identities or paths. This is **not anonymization**. JSON escapes control
 characters and Unicode for safe plain terminal output. Error diagnostics are
 generic; argparse usage errors can echo supplied arguments.
+
+Pepe 39 added opt-in traceability. One command shows it working:
+
+```sh
+python3 -B line-2/tools/csv-transitions/transitions.py line-2/tools/csv-transitions/demo-before.csv line-2/tools/csv-transitions/demo-after.csv --key id --column status --include-records
+```
+
+When tried, it returned **1** and linked the two `pending` → `ready` members
+to keys `1` and `2`, logical records 2 and 3 on both sides. The `ready` → `done`
+member is key `3`, record 4 on both sides. Each transition gains a `records`
+array with the exact `key`, `before_record` and `after_record` for every member,
+in literal composite-key order. Counts and global verdicts are unchanged.
+Without the flag, the original report shape is unchanged. Record numbers count
+the header as 1 and each CSV record once, even when a quoted cell spans lines;
+they are not physical line numbers. Reordered rows retain separate before/after
+locations. Duplicate groups still contribute no transitions or member pairs.
+This option **discloses key values** as well as selected cell values; it omits
+unrelated row fields. A row changing several selected columns appears in each
+relevant transition. No sampling or truncation hides members.
 
 Inputs must be workspace-local UTF-8 CSVs, with unique nonempty headers,
 consistent row width, at most 16 MiB and 100,000 records per file. Selected
@@ -57,7 +76,7 @@ Checks:
 python3 -B -m unittest discover -s line-2/tools/csv-transitions -v
 ```
 
-All **10 behavioral tests passed**: aggregation and ordering, literal strings,
+All **14 behavioral tests passed**: aggregation and ordering, literal strings,
 multiline/control cells, composite keys, multiple columns, duplicates,
 additions/removals, unrelated edits and schema drift, invalid inputs, empty
 cells/tables and CLI statuses. The unchanged engine's **17 tests passed** from
@@ -65,3 +84,6 @@ a byte-identical scratch copy. A self-comparison of the retained real historical
 ZTO-first/IMD-second six-row observation CSV also returned 0 using
 `chain_id,token_address,field` as the key and `raw_value` as the column. That
 trial establishes offline equality only; it makes no fresh chain claim.
+Four traceability regressions additionally cover composite keys, reordered and
+multiline records, default-output compatibility, duplicate exclusion, multiple
+columns, escaped key controls and empty transition lists.

@@ -87,3 +87,13 @@ on bare left rock; all ancestor pixels outside its small placement are intact.
 The 1254-square `artifacts/line-2/wall-v18.png` is identical to `wall.png`;
 record and preview are `dist/line-2/38.json` and `38.jpg`. See the
 [visual review](STEP38_VISUAL_REVIEW.md).
+
+Pepe 39 improved [CSV Transitions](tools/csv-transitions/README.md) with
+`--include-records`, linking every aggregate value transition to its exact
+keys and logical before/after record numbers. Default output is unchanged;
+duplicate groups still never invent pairs. Four new regressions and all ten
+inherited transition tests passed, plus 17 inherited engine tests.
+**The Traced Pebbles** adds a branching charcoal trail between pigment stones
+on bare left rock. The 1254-square `artifacts/line-2/wall-v19.png` is identical
+to continuation `wall.png`; record and 512-pixel preview are `39.json` and
+`39.jpg`. See [visual review](STEP39_VISUAL_REVIEW.md).

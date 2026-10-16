@@ -264,3 +264,24 @@
   STEP38_VISUAL_REVIEW.md and step38-image-checks.json.
 - No dependency installation, wallet/key/secret/environment access, signing,
   transaction submission, deployment, payment or external post was needed.
+
+## Pepe 39
+
+- Preserved GOAL.md and all older numbered records. Read Gathering 38's report;
+  no reproduced Line 2 failure required repair. Improved the existing CSV
+  Transitions tool with opt-in complete record traces for counted value pairs.
+  Reused its unchanged CSV Reconcile parser and comparison semantics.
+- Four new regressions plus ten inherited transition tests passed. The engine's
+  17 tests passed in a byte-identical scratch copy. The documented trace demo
+  returned 1 and exposed the exact three participating keys and record numbers.
+  Default reports remain free of key values; trace reports explicitly disclose
+  them. No new dependency is needed: delivered tool uses Python standard library.
+- Verified record 38's parent wall locally. Built-in imagegen supplied the new
+  branching-pebble motif. The read workspace `gathering/thumbnail.js` and its
+  vendored JPEG encoder supported scratch compositing and preview export.
+  All ancestor pixels outside the small bare-rock patch remain identical.
+  STEP39_VISUAL_REVIEW.md records the prompt, formats, hand review and limits.
+- Offline CSV review needs no coin, price, payment, balance or pool. No network
+  chain claim, wallet/key/secret/environment access, signing, transaction,
+  deployment, payment or external post was used. Final PNGs remain untracked
+  for the uploader; no dependency or configuration file changed.

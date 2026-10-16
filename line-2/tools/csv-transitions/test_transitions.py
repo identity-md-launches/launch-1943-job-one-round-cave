@@ -111,6 +111,46 @@ class TransitionTests(unittest.TestCase):
             else:
                 json.loads(out.getvalue())
 
+    def test_trace_composite_keys_reordering_and_multiline_records(self):
+        b = self.write('b.csv', [['id','part','v'],['b','2','old\nvalue'],['a','1','old\nvalue']])
+        a = self.write('a.csv', [['part','v','id'],['1','new','a'],['2','new','b']])
+        report = tool.transitions(b, a, ('id','part'), ('v',), include_records=True)
+        group = report['columns'][0]['transitions'][0]
+        self.assertEqual(group['rows'], len(group['records']))
+        self.assertEqual(group['records'], [
+            {'key':{'id':'a','part':'1'},'before_record':3,'after_record':2},
+            {'key':{'id':'b','part':'2'},'before_record':2,'after_record':3}])
+        default = tool.transitions(b, a, ('id','part'), ('v',))
+        del group['records']
+        self.assertEqual(report, default)
+
+    def test_trace_excludes_duplicates_and_unselected_changes(self):
+        b = self.write('b.csv', [['id','v','w'],['dup','a','x'],['dup','a','x'],['ok','a','x'],['other','a','x']])
+        a = self.write('a.csv', [['id','v','w'],['dup','b','y'],['ok','b','y'],['other','a','y']])
+        r = tool.transitions(b, a, ('id',), ('v','w'), True)
+        self.assertFalse(r['complete'])
+        self.assertEqual(r['columns'][0]['transitions'][0]['records'], [
+            {'key':{'id':'ok'},'before_record':4,'after_record':3}])
+        self.assertEqual([m['key']['id'] for m in r['columns'][1]['transitions'][0]['records']], ['ok','other'])
+
+    def test_trace_cli_escapes_keys_and_keeps_global_verdict(self):
+        b = self.write('b.csv', [['id','v'],['\x1b[31m','a'],['removed','z']])
+        a = self.write('a.csv', [['id','v'],['\x1b[31m','b']])
+        out = io.StringIO()
+        with contextlib.redirect_stdout(out):
+            code = tool.main([str(b), str(a), '--key','id','--column','v','--include-records'])
+        self.assertEqual(code, 1)
+        self.assertNotIn('\x1b', out.getvalue())
+        r = json.loads(out.getvalue())
+        self.assertEqual(r['summary']['removed'], 1)
+        self.assertEqual(r['columns'][0]['transitions'][0]['records'][0]['key'], {'id':'\x1b[31m'})
+
+    def test_trace_empty_transition_list(self):
+        b = self.write('b.csv', [['id','v'],['x','a']])
+        r = tool.transitions(b,b,('id',),('v',),True)
+        self.assertTrue(r['equal'])
+        self.assertEqual(r['columns'][0]['transitions'], [])
+
 
 if __name__ == '__main__':
     unittest.main()

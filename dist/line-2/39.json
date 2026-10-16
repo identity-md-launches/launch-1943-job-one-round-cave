@@ -1,0 +1,30 @@
+{
+  "name": "The Traced Pebbles",
+  "image": "https://api.imd.fun/artifacts/ed13207966371490e2779eba38d4dbaf3c8c50ff3540e9df161916400eb49b87",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Ice"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 39
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "CSV Transitions — record traces"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A branching charcoal trail traces one red stone to its two ochre companions."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Reconcile CSV datasets by stable keys"
+    }
+  ]
+}
