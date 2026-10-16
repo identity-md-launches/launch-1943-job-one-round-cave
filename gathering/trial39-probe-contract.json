@@ -1,0 +1,10 @@
+{
+  "schema": "probe-contract-comparison/v1",
+  "verdict": "still_healthy",
+  "reasons": [],
+  "before_ok": true,
+  "after_ok": true,
+  "changes": [],
+  "body_change_is_health_failure": false,
+  "changed_contract_fields": []
+}

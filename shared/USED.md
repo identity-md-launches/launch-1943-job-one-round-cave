@@ -307,3 +307,14 @@ Copied `line-3/tools/import-order/order.py` to `shared/import-drift/order.py`, c
   Neither requires copying into the source-analysis handoff.
 - No line folder, goal, record, dependency, configuration or contract changed.
   No coin, wallet, signing, sending, payment or deployment is involved.
+
+## Gathering 39 — Origin CSV Review
+
+Reused `line-3/tools/import-origin-trace/origins.py` as
+`shared/import-drift/origins.py`, adapting only the sibling budget loader.
+Refreshed `shared/import-drift/transitions.py` from Line 2's current
+`csv-transitions/transitions.py`, adapting only its reconciler loader; optional
+record provenance is now available without changing default results.
+New `origin_csv.py` connects these with the existing local budget, mapper and
+reconciler. Seven integration tests and an actual source-only shared-worker
+scan exercise the handoff. See [ORIGINS.md](import-drift/ORIGINS.md).

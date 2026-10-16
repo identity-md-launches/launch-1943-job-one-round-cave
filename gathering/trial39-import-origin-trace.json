@@ -1,0 +1,4 @@
+4 modules; 3 from-import names
+app.py:1 app.launch: resolved — implementation.run (implementation.py:1)
+app.py:2 app.*: unresolved — wildcard_import
+facade.py:1 facade.run: resolved — implementation.run (implementation.py:1)

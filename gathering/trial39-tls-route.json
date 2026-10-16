@@ -1,0 +1,27 @@
+{
+  "schema": "tls-route/v1",
+  "origin": "https://api.imd.fun",
+  "checked_at": "2026-10-16T07:27:26.273897+00:00",
+  "ok": true,
+  "degraded": false,
+  "addresses": [
+    {
+      "address": "69.46.46.29",
+      "family": "IPv4",
+      "ok": true,
+      "tls_version": "TLSv1.3",
+      "certificate": {
+        "expires_at": "2026-12-17T22:53:38+00:00",
+        "days_remaining": 62.64,
+        "dns_names": [
+          "api.imd.fun"
+        ]
+      },
+      "elapsed_ms": 73.976
+    }
+  ],
+  "limits": {
+    "per_address_seconds": 2.0,
+    "max_addresses": 4
+  }
+}

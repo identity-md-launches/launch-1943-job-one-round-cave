@@ -1,0 +1,68 @@
+{
+  "format": "csv-transitions/v1",
+  "equal": false,
+  "complete": true,
+  "keys": [
+    "id"
+  ],
+  "schema": {
+    "added_columns": [],
+    "removed_columns": []
+  },
+  "summary": {
+    "before_records": 5,
+    "after_records": 5,
+    "added": 1,
+    "removed": 1,
+    "changed": 4,
+    "unchanged_on_common_columns": 0,
+    "ambiguous_keys": 0
+  },
+  "unpaired_records": {
+    "before": 0,
+    "after": 0
+  },
+  "columns": [
+    {
+      "column": "status",
+      "changed_rows": 3,
+      "transitions": [
+        {
+          "before": "pending",
+          "after": "ready",
+          "rows": 2,
+          "records": [
+            {
+              "key": {
+                "id": "1"
+              },
+              "before_record": 2,
+              "after_record": 2
+            },
+            {
+              "key": {
+                "id": "2"
+              },
+              "before_record": 3,
+              "after_record": 3
+            }
+          ]
+        },
+        {
+          "before": "ready",
+          "after": "done",
+          "rows": 1,
+          "records": [
+            {
+              "key": {
+                "id": "3"
+              },
+              "before_record": 4,
+              "after_record": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

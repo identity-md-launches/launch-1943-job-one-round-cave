@@ -1,0 +1,361 @@
+{
+  "sites": [
+    {
+      "module": "main",
+      "path": "main.py",
+      "line": 3,
+      "column": 0,
+      "alias_index": 0,
+      "spelling": "pkg.nested.worker",
+      "base": {
+        "target": "pkg.nested.worker",
+        "status": "source_candidate",
+        "steps": [
+          {
+            "module": "pkg",
+            "kind": "regular_package",
+            "selected": "pkg/__init__.py",
+            "source_paths": [
+              "pkg/__init__.py"
+            ]
+          },
+          {
+            "module": "pkg.nested",
+            "kind": "regular_package",
+            "selected": "pkg/nested/__init__.py",
+            "source_paths": [
+              "pkg/nested/__init__.py"
+            ]
+          },
+          {
+            "module": "pkg.nested.worker",
+            "kind": "source_module",
+            "selected": "pkg/nested/worker.py",
+            "source_paths": [
+              "pkg/nested/worker.py"
+            ]
+          }
+        ],
+        "initializers": [
+          {
+            "module": "pkg",
+            "path": "pkg/__init__.py"
+          },
+          {
+            "module": "pkg.nested",
+            "path": "pkg/nested/__init__.py"
+          }
+        ]
+      },
+      "child_candidate": null
+    },
+    {
+      "module": "main",
+      "path": "main.py",
+      "line": 4,
+      "column": 0,
+      "alias_index": 0,
+      "spelling": "pkg import nested",
+      "base": {
+        "target": "pkg",
+        "status": "source_candidate",
+        "steps": [
+          {
+            "module": "pkg",
+            "kind": "regular_package",
+            "selected": "pkg/__init__.py",
+            "source_paths": [
+              "pkg/__init__.py"
+            ]
+          }
+        ],
+        "initializers": [
+          {
+            "module": "pkg",
+            "path": "pkg/__init__.py"
+          }
+        ]
+      },
+      "child_candidate": {
+        "target": "pkg.nested",
+        "status": "source_candidate",
+        "steps": [
+          {
+            "module": "pkg",
+            "kind": "regular_package",
+            "selected": "pkg/__init__.py",
+            "source_paths": [
+              "pkg/__init__.py"
+            ]
+          },
+          {
+            "module": "pkg.nested",
+            "kind": "regular_package",
+            "selected": "pkg/nested/__init__.py",
+            "source_paths": [
+              "pkg/nested/__init__.py"
+            ]
+          }
+        ],
+        "initializers": [
+          {
+            "module": "pkg",
+            "path": "pkg/__init__.py"
+          },
+          {
+            "module": "pkg.nested",
+            "path": "pkg/nested/__init__.py"
+          }
+        ],
+        "condition": "only_if_attribute_missing"
+      }
+    },
+    {
+      "module": "main",
+      "path": "main.py",
+      "line": 5,
+      "column": 0,
+      "alias_index": 0,
+      "spelling": "pkg.nested import worker",
+      "base": {
+        "target": "pkg.nested",
+        "status": "source_candidate",
+        "steps": [
+          {
+            "module": "pkg",
+            "kind": "regular_package",
+            "selected": "pkg/__init__.py",
+            "source_paths": [
+              "pkg/__init__.py"
+            ]
+          },
+          {
+            "module": "pkg.nested",
+            "kind": "regular_package",
+            "selected": "pkg/nested/__init__.py",
+            "source_paths": [
+              "pkg/nested/__init__.py"
+            ]
+          }
+        ],
+        "initializers": [
+          {
+            "module": "pkg",
+            "path": "pkg/__init__.py"
+          },
+          {
+            "module": "pkg.nested",
+            "path": "pkg/nested/__init__.py"
+          }
+        ]
+      },
+      "child_candidate": {
+        "target": "pkg.nested.worker",
+        "status": "source_candidate",
+        "steps": [
+          {
+            "module": "pkg",
+            "kind": "regular_package",
+            "selected": "pkg/__init__.py",
+            "source_paths": [
+              "pkg/__init__.py"
+            ]
+          },
+          {
+            "module": "pkg.nested",
+            "kind": "regular_package",
+            "selected": "pkg/nested/__init__.py",
+            "source_paths": [
+              "pkg/nested/__init__.py"
+            ]
+          },
+          {
+            "module": "pkg.nested.worker",
+            "kind": "source_module",
+            "selected": "pkg/nested/worker.py",
+            "source_paths": [
+              "pkg/nested/worker.py"
+            ]
+          }
+        ],
+        "initializers": [
+          {
+            "module": "pkg",
+            "path": "pkg/__init__.py"
+          },
+          {
+            "module": "pkg.nested",
+            "path": "pkg/nested/__init__.py"
+          }
+        ],
+        "condition": "only_if_attribute_missing"
+      }
+    },
+    {
+      "module": "pkg",
+      "path": "pkg/__init__.py",
+      "line": 2,
+      "column": 0,
+      "alias_index": 0,
+      "spelling": ". import support",
+      "base": {
+        "target": "pkg",
+        "status": "source_candidate",
+        "steps": [
+          {
+            "module": "pkg",
+            "kind": "regular_package",
+            "selected": "pkg/__init__.py",
+            "source_paths": [
+              "pkg/__init__.py"
+            ]
+          }
+        ],
+        "initializers": [
+          {
+            "module": "pkg",
+            "path": "pkg/__init__.py"
+          }
+        ]
+      },
+      "child_candidate": {
+        "target": "pkg.support",
+        "status": "source_candidate",
+        "steps": [
+          {
+            "module": "pkg",
+            "kind": "regular_package",
+            "selected": "pkg/__init__.py",
+            "source_paths": [
+              "pkg/__init__.py"
+            ]
+          },
+          {
+            "module": "pkg.support",
+            "kind": "source_module",
+            "selected": "pkg/support.py",
+            "source_paths": [
+              "pkg/support.py"
+            ]
+          }
+        ],
+        "initializers": [
+          {
+            "module": "pkg",
+            "path": "pkg/__init__.py"
+          }
+        ],
+        "condition": "only_if_attribute_missing"
+      }
+    },
+    {
+      "module": "pkg.nested.worker",
+      "path": "pkg/nested/worker.py",
+      "line": 1,
+      "column": 0,
+      "alias_index": 0,
+      "spelling": ".. import support",
+      "base": {
+        "target": "pkg",
+        "status": "source_candidate",
+        "steps": [
+          {
+            "module": "pkg",
+            "kind": "regular_package",
+            "selected": "pkg/__init__.py",
+            "source_paths": [
+              "pkg/__init__.py"
+            ]
+          }
+        ],
+        "initializers": [
+          {
+            "module": "pkg",
+            "path": "pkg/__init__.py"
+          }
+        ]
+      },
+      "child_candidate": {
+        "target": "pkg.support",
+        "status": "source_candidate",
+        "steps": [
+          {
+            "module": "pkg",
+            "kind": "regular_package",
+            "selected": "pkg/__init__.py",
+            "source_paths": [
+              "pkg/__init__.py"
+            ]
+          },
+          {
+            "module": "pkg.support",
+            "kind": "source_module",
+            "selected": "pkg/support.py",
+            "source_paths": [
+              "pkg/support.py"
+            ]
+          }
+        ],
+        "initializers": [
+          {
+            "module": "pkg",
+            "path": "pkg/__init__.py"
+          }
+        ],
+        "condition": "only_if_attribute_missing"
+      }
+    }
+  ],
+  "issues": [],
+  "summary": {
+    "import_sites": 5,
+    "issues": 0,
+    "base_initializer_sources": 2,
+    "additional_conditional_initializer_sources": 0
+  },
+  "status": "complete",
+  "limits": {
+    "files": 1000,
+    "file_bytes": 262144,
+    "total_bytes": 8388608,
+    "entries": 20000,
+    "depth": 64
+  },
+  "inventory": {
+    "files": 5,
+    "bytes": 374,
+    "entries": 7,
+    "skipped_symlinks": 0,
+    "skipped_directories": 0,
+    "skipped_nonregular": 0,
+    "manifest": [
+      {
+        "path": "main.py",
+        "bytes": 192,
+        "sha256": "9168f6afe911c9f3c710d2bea2d712b664182c0db8dda12510e21174ab173a07"
+      },
+      {
+        "path": "pkg/__init__.py",
+        "bytes": 75,
+        "sha256": "7ab777506cde0fb5dfb67651ad629f121687aaa9955894e62cc7c2ddb56073f6"
+      },
+      {
+        "path": "pkg/nested/__init__.py",
+        "bytes": 74,
+        "sha256": "fe7490b13e21989d82ff043a51fc24f6630751f3f50d70b2fb00d49aa42ad0aa"
+      },
+      {
+        "path": "pkg/nested/worker.py",
+        "bytes": 23,
+        "sha256": "8424c9f2c958475ed7f091e7e704cbe59e3df7dc4fa8c27b426a84da25297494"
+      },
+      {
+        "path": "pkg/support.py",
+        "bytes": 10,
+        "sha256": "e13df8c44af5dea1e412403910b99cc5a48f2ccbf68a66b3374d6ab9cef9fc65"
+      }
+    ]
+  },
+  "scope": "Source candidates, not runtime execution: the explicit root is an import root, not itself a package. Regular package __init__.py files are listed outermost first; namespace directories contribute no initializer. A source module blocks a dotted traversal beyond itself. From-import child candidates are conditional because an attribute may already exist. Conditions, aliases, sys.modules, search paths, loaders, extension modules and runtime package attributes are not evaluated. Initializer imports are inspected as separate sites, not recursively executed. Dynamic imports and wildcard expansion are omitted. No project code is imported; the existing explicit import graph is unchanged.",
+  "collection_scope": "Complete means collection finished within the stated budgets, not that runtime imports are known. Hidden and conventional dependency directories, symlinks and nonregular files are skipped. Explicit AST imports only; parse issues and dynamic calls remain visible. Use a stable source tree. These are input-size limits, not CPU, memory or elapsed-time guarantees."
+}

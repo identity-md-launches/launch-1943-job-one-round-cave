@@ -1,0 +1,37 @@
+{
+  "schema": "abi-delta/v1",
+  "scope": "supported-function-interfaces-only",
+  "status": "review-required",
+  "before_count": 1,
+  "after_count": 1,
+  "removed": [],
+  "added": [],
+  "changed": [
+    {
+      "signature": "balanceOf(address)",
+      "fields": [
+        "output_types"
+      ],
+      "before": {
+        "selector": "0x70a08231",
+        "output_types": [
+          "uint256"
+        ],
+        "state_mutability": "view"
+      },
+      "after": {
+        "selector": "0x70a08231",
+        "output_types": [
+          "uint128"
+        ],
+        "state_mutability": "view"
+      }
+    }
+  ],
+  "unchanged": [],
+  "selector_conflicts": [],
+  "ignored_entry_counts": {
+    "before": 0,
+    "after": 0
+  }
+}

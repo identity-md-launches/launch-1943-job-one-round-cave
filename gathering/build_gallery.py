@@ -84,9 +84,9 @@ def main():
                     capture_output=True, check=True).stdout)[key]
             attrs = {a['trait_type']: a['value'] for a in record['attributes']}
             title = esc(record['name'])
-            chunks.append(f'<article data-record="{key}"><a href="{key}"><img src="{previews[key]}" alt="">{path.stem} · {title}</a></article>')
+            chunks.append(f'<article data-record={key}><a href={key}><img src="{previews[key]}" alt="">{path.stem} {title}</a></article>')
         chunks.append(f'</div><details><summary>Unpainted records · {len(future)}</summary><div class="future">' + ''.join(future) + '</div></details></section>')
-    chunks.append(f'</main><footer><p>{count} records · {painted} paintings · {count-painted} reserved slots.</p><p>Embedded previews work offline. Full walls open the artifact service. Titles open metadata records containing full-wall links; adjacent JPEGs are 512 px.</p><p><a href="../gathering/REPORT.md">Gathering report</a> · <a href="goals.json">Four goals</a> · <a href="../shared/http-evidence/README.md">Shared HTTP evidence tools</a></p></footer></body></html>')
+    chunks.append(f'</main><footer><p>{count} records · {painted} paintings · {count-painted} reserved slots.</p><p>Previews work offline. Titles open records; adjacent JPEGs are 512 px. Full walls open the artifact service.</p><p><a href="../gathering/REPORT.md">Gathering report</a> · <a href="goals.json">Four goals</a> · <a href="../shared/http-evidence/README.md">Shared HTTP evidence tools</a></p></footer></body></html>')
     result = ''.join(chunks)
     if len(result.encode()) > 100000:
         raise ValueError(f'gallery exceeds 100 KB: {len(result.encode())} bytes')

@@ -1,0 +1,148 @@
+{
+  "catalog": [
+    "argparse",
+    "ast",
+    "asyncio",
+    "collections",
+    "concurrent",
+    "contextlib",
+    "copy",
+    "csv",
+    "dataclasses",
+    "datetime",
+    "decimal",
+    "email",
+    "enum",
+    "fractions",
+    "functools",
+    "hashlib",
+    "heapq",
+    "http",
+    "importlib",
+    "inspect",
+    "io",
+    "itertools",
+    "json",
+    "logging",
+    "math",
+    "multiprocessing",
+    "operator",
+    "os",
+    "pathlib",
+    "pickle",
+    "platform",
+    "queue",
+    "random",
+    "re",
+    "secrets",
+    "shutil",
+    "signal",
+    "socket",
+    "sqlite3",
+    "ssl",
+    "statistics",
+    "string",
+    "subprocess",
+    "sys",
+    "tempfile",
+    "threading",
+    "time",
+    "tkinter",
+    "tokenize",
+    "traceback",
+    "types",
+    "typing",
+    "unittest",
+    "urllib",
+    "uuid",
+    "warnings",
+    "weakref",
+    "xml",
+    "zipfile",
+    "zoneinfo"
+  ],
+  "candidates": [
+    {
+      "name": "json",
+      "selected": "json/__init__.py",
+      "source_paths": [
+        "json/__init__.py"
+      ],
+      "sites": [
+        {
+          "path": "app.py",
+          "module": "app",
+          "line": 3,
+          "column": 0,
+          "alias_index": 0,
+          "target": "json",
+          "imported_name": "json",
+          "kind": "import"
+        },
+        {
+          "path": "app.py",
+          "module": "app",
+          "line": 4,
+          "column": 0,
+          "alias_index": 0,
+          "target": "json.decoder",
+          "imported_name": "json.decoder",
+          "kind": "import"
+        },
+        {
+          "path": "app.py",
+          "module": "app",
+          "line": 5,
+          "column": 0,
+          "alias_index": 0,
+          "target": "json",
+          "imported_name": "loads",
+          "kind": "from"
+        }
+      ]
+    }
+  ],
+  "namespace_only": [],
+  "issues": [],
+  "summary": {
+    "candidates": 1,
+    "linked_sites": 3,
+    "namespace_only": 0,
+    "issues": 0
+  },
+  "status": "complete",
+  "limits": {
+    "files": 1000,
+    "file_bytes": 262144,
+    "total_bytes": 8388608,
+    "entries": 20000,
+    "depth": 64
+  },
+  "inventory": {
+    "files": 3,
+    "bytes": 363,
+    "entries": 4,
+    "skipped_symlinks": 0,
+    "skipped_directories": 0,
+    "skipped_nonregular": 0,
+    "manifest": [
+      {
+        "path": "app.py",
+        "bytes": 218,
+        "sha256": "c61b9c7683aca6a8090f24ced9b713b446c562ce812a0cbb9b03cadbfa450e1a"
+      },
+      {
+        "path": "json/__init__.py",
+        "bytes": 113,
+        "sha256": "4326f644a83ec35d5e095190ed40f597d8789e0de4b5cee5476c170e8dcb7309"
+      },
+      {
+        "path": "json/decoder.py",
+        "bytes": 32,
+        "sha256": "b18235ab8dce062a67aacf936c59ca99bf5dca3dc33d32a365fda36f1028d41f"
+      }
+    ]
+  },
+  "scope": "Name collisions are review candidates, not runtime resolution. The explicit root is an import search root. Only top-level .py modules and regular packages can shadow a reserved name; namespace-only directories are reported separately because a later regular package can take precedence. Absolute import syntax is linked to candidates; relative imports are excluded. No source is executed. sys.modules, built-in/frozen precedence, loaders and actual sys.path are unknown. The fixed catalog is a common standard-library subset, not an exhaustive Python-version inventory. --names replaces it for other review catalogs.",
+  "collection_scope": "Complete means collection finished within the stated budgets, not that runtime imports are known. Hidden and conventional dependency directories, symlinks and nonregular files are skipped. Explicit AST imports only; parse issues and dynamic calls remain visible. Use a stable source tree. These are input-size limits, not CPU, memory or elapsed-time guarantees."
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "transcript-inspector/v1",
+  "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+  "block": "0x18fd343",
+  "request_id": 3,
+  "calldata_bytes": 4,
+  "call": {
+    "schema": "call-inspector/v1",
+    "calldata_bytes": 4,
+    "function_count": 1,
+    "selector": "0x18160ddd",
+    "status": "decoded",
+    "candidates": [
+      {
+        "abi_index": 0,
+        "signature": "totalSupply()"
+      }
+    ],
+    "signature": "totalSupply()",
+    "abi_index": 0,
+    "arguments": []
+  },
+  "return_data_bytes": 32,
+  "status": "decoded",
+  "outputs": [
+    {
+      "name": "supply",
+      "type": "uint256",
+      "value": 1000000000000000000000000000
+    }
+  ]
+}

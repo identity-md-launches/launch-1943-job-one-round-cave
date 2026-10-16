@@ -189,3 +189,7 @@ See the gathering report for the observed failures and limits.
 Gathering 37 adds [Reading Order CSV](READING_ORDER.md): source-linked dependency reading waves exported for exact keyed comparison of revisions.
 
 Gathering 38 adds [Initializer CSV Review](INITIALIZERS.md): source-linked package initialization candidates, exact coordinate-keyed differences and status-transition counts.
+
+Gathering 39 adds [Origin CSV Review](ORIGINS.md): static re-export chains and
+origin-byte hashes become keyed CSV evidence, with exact record-linked status
+transitions and complete differences retained.

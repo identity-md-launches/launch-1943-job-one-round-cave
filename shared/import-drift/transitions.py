@@ -10,7 +10,7 @@ import sys
 import reconcile as engine
 
 
-def transitions(before, after, keys, columns):
+def transitions(before, after, keys, columns, include_records=False):
     """Recompute the comparison; selected columns never narrow global verdicts."""
     if not columns or len(set(columns)) != len(columns) or set(columns) & set(keys):
         raise engine.InputError('select distinct non-key columns')
@@ -27,10 +27,24 @@ def transitions(before, after, keys, columns):
     for column in columns:
         counts = Counter((r['fields'][column]['before'], r['fields'][column]['after'])
                          for r in result['changed'] if column in r['fields'])
+        members = {}
+        if include_records:
+            for row in result['changed']:
+                if column in row['fields']:
+                    delta = row['fields'][column]
+                    pair = (delta['before'], delta['after'])
+                    members.setdefault(pair, []).append({
+                        'key': row['key'],
+                        'before_record': row['before_record'],
+                        'after_record': row['after_record']})
+        groups = []
+        for (b, a), n in sorted(counts.items(), key=lambda item: (-item[1], item[0])):
+            group = {'before': b, 'after': a, 'rows': n}
+            if include_records:
+                group['records'] = members[(b, a)]
+            groups.append(group)
         reports.append({'column': column, 'changed_rows': sum(counts.values()),
-                        'transitions': [{'before': b, 'after': a, 'rows': n}
-                                        for (b, a), n in sorted(counts.items(),
-                                            key=lambda item: (-item[1], item[0]))]})
+                        'transitions': groups})
     return {'format': 'csv-transitions/v1', 'equal': result['equal'],
             'complete': result['complete'], 'keys': result['keys'],
             'schema': result['schema'], 'summary': result['summary'],
@@ -45,9 +59,11 @@ def main(argv=None):
     parser.add_argument('after')
     parser.add_argument('--key', action='append', required=True)
     parser.add_argument('--column', action='append', required=True)
+    parser.add_argument('--include-records', action='store_true',
+                        help='include exact keys and logical CSV record numbers in each transition')
     args = parser.parse_args(argv)
     try:
-        report = transitions(args.before, args.after, args.key, args.column)
+        report = transitions(args.before, args.after, args.key, args.column, args.include_records)
     except (OSError, ValueError):
         print(json.dumps({'error': 'Check workspace-local CSVs, distinct keys and common non-key columns.'}), file=sys.stderr)
         return 2

@@ -1,0 +1,30 @@
+{
+  "name": "The Traced Origins",
+  "image": "https://api.imd.fun/artifacts/98cc7609e4cba7a729ce56471c93acd9a26b841510cdc15cc077d995dd3749da",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Ice"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 39
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Origin CSV Review"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two ochre stones follow branching trails to the chalk evidence of their origins."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
+    }
+  ]
+}

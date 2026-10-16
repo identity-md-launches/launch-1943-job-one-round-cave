@@ -1,0 +1,49 @@
+{
+  "ancestor_sha256": "00ef58619cf56be7e4f8289561dfd73194c91f2d37b4d4caccf171ca3de14382",
+  "generated_sha256": "a3b71359d8c1f9aaaa497f8710f5c9901c46cc2c940d5dc5d449edbbd73ee08a",
+  "png": {
+    "path": "artifacts/gathering/wall-v19.png",
+    "format": "PNG",
+    "mode": "RGB",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 4017493,
+    "sha256": "98cc7609e4cba7a729ce56471c93acd9a26b841510cdc15cc077d995dd3749da"
+  },
+  "jpeg": {
+    "path": "dist/gathering/39.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 68080
+  },
+  "preservation": {
+    "rectangle": [
+      420,
+      920,
+      510,
+      1005
+    ],
+    "changed_pixels": 1161,
+    "changed_bounds": [
+      426,
+      920,
+      510,
+      1003
+    ],
+    "outside_rectangle_changed_pixels": 0
+  },
+  "model": "installed image edit tool; generated pigment isolated over verified ancestor",
+  "visual_review_completed": true,
+  "unmet_visual_requirements": [],
+  "visual_review": {
+    "pepe": "Inherited wide mouth, heavy-lidded eyes and cave-pigment figure retained.",
+    "hands": "Two visible figure hands and the upper hand stencil retain five digits each (four fingers and one thumb); no hands added.",
+    "preservation": "Only new generated pigment was transferred to bare lower-left rock. Ancestor pixels outside the placement remain identical.",
+    "limitations": "Small added motif is faint in the 512 px preview. Local visual review is not independent approval."
+  }
+}
