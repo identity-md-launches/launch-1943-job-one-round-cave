@@ -1,0 +1,41 @@
+{
+  "schema": "accept-lens/v1",
+  "url": "https://api.imd.fun/launches",
+  "checked_at": "2026-10-16T07:07:16.288124+00:00",
+  "limits": {
+    "deadline_seconds": 8.0,
+    "max_bytes_per_sample": 262144
+  },
+  "samples": [
+    {
+      "accept": "application/json",
+      "status": 200,
+      "media_type": "application/json",
+      "content_encoding": "identity",
+      "redirect_location_present": false,
+      "body_bytes": 126185,
+      "body_sha256": "fdc0715dc94e3a727d0907ce3675d481bdb19ce7d317d9f2a1637bc93ea7d211",
+      "valid_json": true,
+      "ok": true,
+      "elapsed_ms": 368.629
+    },
+    {
+      "accept": "text/html",
+      "status": 200,
+      "media_type": "application/json",
+      "content_encoding": "identity",
+      "redirect_location_present": false,
+      "body_bytes": 126185,
+      "body_sha256": "fdc0715dc94e3a727d0907ce3675d481bdb19ce7d317d9f2a1637bc93ea7d211",
+      "valid_json": true,
+      "ok": true,
+      "elapsed_ms": 352.945
+    }
+  ],
+  "comparison": {
+    "verdict": "same_observed_contract",
+    "differences": [],
+    "body_digests_differ": false
+  },
+  "elapsed_ms": 885.877
+}

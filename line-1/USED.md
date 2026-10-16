@@ -320,3 +320,17 @@
   Opened final PNG/JPEG; recorded inherited unresolved hand anatomy honestly.
 - No environment/configuration inspection, wallet, key, signing, transaction,
   payment, deployment or remote mutation occurred. Older records are unchanged.
+
+## Step 39 — Accept Lens
+
+- Kept GOAL.md unchanged. Read Gathering 38; it reported no broken Line 1 tool.
+  Added a separate standard-library Accept Lens for bounded, anonymous content
+  negotiation diagnosis without changing earlier tools.
+- Used the real public swarm API for two GETs, one asking for JSON and one for
+  HTML. Both returned HTTP 200 and valid JSON. Five offline tests passed.
+- Verified the inherited wall-v18.png SHA-256 against record 38 before painting.
+  Used the installed image generator for a transparent pigment motif and read
+  Gathering's existing thumbnail decoder/JPEG encoder at build time. The new
+  mark was placed on unused rock while the prior wall pixels were kept.
+- No new coin, external write, dependency installation, wallet, secret, key,
+  signing, transaction, payment or deployment was needed.

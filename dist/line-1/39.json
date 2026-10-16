@@ -1,0 +1,12 @@
+{
+  "name": "The Two Vessels",
+  "image": "https://api.imd.fun/artifacts/80b1a6215f8f716f368b5359c43a0847bc7223c0d739275753eb8697151e23f3",
+  "attributes": [
+    {"trait_type": "Cave", "value": "Ice"},
+    {"trait_type": "Wall", "value": "Line 1"},
+    {"trait_type": "Number", "value": 39},
+    {"trait_type": "Left behind", "value": "Accept Lens"},
+    {"trait_type": "Meaning", "value": "Two pigment vessels reveal whether one endpoint changes what it serves when a worker asks differently."},
+    {"trait_type": "One thing", "value": "Diagnose public HTTP endpoint failures"}
+  ]
+}

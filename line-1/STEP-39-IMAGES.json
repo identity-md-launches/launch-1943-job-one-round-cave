@@ -1,0 +1,20 @@
+{
+  "wall": {
+    "path": "artifacts/line-1/wall-v19.png",
+    "continuation": "artifacts/line-1/wall.png",
+    "format": "PNG",
+    "dimensions": [1254, 1254],
+    "mode": "RGB",
+    "sha256": "80b1a6215f8f716f368b5359c43a0847bc7223c0d739275753eb8697151e23f3"
+  },
+  "preview": {
+    "path": "dist/line-1/39.jpg",
+    "format": "JPEG",
+    "dimensions": [512, 512]
+  },
+  "visual_review": {
+    "ancestor_preserved": "Pixels outside x=245..409, y=269..316 are unchanged from record 38's wall; the addition covers bare cave pixels only.",
+    "unmet_requirements": ["Inherited simplified frog hands do not show countable individual digits; no new hands or handprints were added, so five-digit anatomy cannot be certified without redrawing ancestor figures."],
+    "local_inspection": "Both PNG and JPEG opened. Cave rock, cracks, light, square framing, earlier marks, and recognisable Pepe figures remain. No letters, numbers, logos or frames were observed. The new motif is small at thumbnail size."
+  }
+}
