@@ -1,0 +1,13 @@
+{
+  "command": "python3 -B -m unittest discover -s line-3/tools/import-shadow -v",
+  "exit_code": 0,
+  "output": "test_catalog_replacement_and_validation (test_shadow.ShadowTests.test_catalog_replacement_and_validation) ... ok\ntest_cli_manifest_strict_budget_and_symlinks (test_shadow.ShadowTests.test_cli_manifest_strict_budget_and_symlinks) ... ok\ntest_links_aliases_from_and_dotted_imports (test_shadow.ShadowTests.test_links_aliases_from_and_dotted_imports) ... ok\ntest_namespace_not_reported_as_regular_shadow (test_shadow.ShadowTests.test_namespace_not_reported_as_regular_shadow) ... ok\ntest_nested_condition_and_encoding (test_shadow.ShadowTests.test_nested_condition_and_encoding) ... ok\ntest_nested_names_are_not_top_level_collisions (test_shadow.ShadowTests.test_nested_names_are_not_top_level_collisions) ... ok\ntest_parse_errors_retained_and_unused_candidates_visible (test_shadow.ShadowTests.test_parse_errors_retained_and_unused_candidates_visible) ... ok\ntest_regular_package_wins_collision_and_shadowed_not_parsed (test_shadow.ShadowTests.test_regular_package_wins_collision_and_shadowed_not_parsed) ... ok\ntest_relative_and_unrelated_imports_excluded (test_shadow.ShadowTests.test_relative_and_unrelated_imports_excluded) ... ok\ntest_root_initializer_ignored (test_shadow.ShadowTests.test_root_initializer_ignored) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.210s\n\nOK\n",
+  "delivery": {
+    "record_count": 39,
+    "record_schema": true,
+    "artifact_hash": true,
+    "continuation_identical": true,
+    "goal_and_old_records_unchanged": true,
+    "file_size_limits": true
+  }
+}

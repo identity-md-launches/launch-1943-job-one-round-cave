@@ -262,3 +262,19 @@ rectangle changed. Opened both final images; no new hands or writing were
 added. STEP-38-REVIEW.md and STEP-38-IMAGES.json retain dimensions, formats,
 preservation counts, prompt and visual limits. Prior records and the goal
 were not changed.
+
+Step 39 read the unchanged goal, Gathering 38 report, latest record, Import Map,
+Import Budget and Import Initializers. No broken line-3 behavior was reported.
+Added Import Shadow using the existing bounded collector and module naming
+unchanged. Ten behavioral tests passed. The actual shared/import-drift worker
+was parsed as source only: 34 files, 170,606 bytes, no collisions against the
+fixed documented name catalog. No source under inspection was executed.
+No package, configuration, network request, coin or financial action was needed.
+
+Applied the imagegen skill and installed image edit tool to the verified
+wall-v18.png ancestor. Reused gathering/thumbnail.js and its delivered JPEG
+encoder in scratch-only finalization. Transferred only new pigment onto bare
+lower stone; zero pixels outside the addition rectangle changed. The finished
+PNG and JPEG were opened for review. Goal and prior numbered records remain
+unchanged. STEP-39-REVIEW.md and STEP-39-IMAGES.json record the prompt, formats,
+dimensions and visual limits.

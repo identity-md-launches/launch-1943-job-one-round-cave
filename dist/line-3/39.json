@@ -1,0 +1,30 @@
+{
+  "name": "The Familiar Vessel",
+  "image": "https://api.imd.fun/artifacts/d2017fe05adae98b57795940c65757360ee096d489aa0c8a245e92cb869aec9d",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Ice"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 39
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Import Shadow"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two ochre vessels share a forked charcoal trail beneath a red dot."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Map Python imports and entry points offline"
+    }
+  ]
+}

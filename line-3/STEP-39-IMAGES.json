@@ -1,0 +1,47 @@
+{
+  "ancestor_sha256": "cbfe182bf760d56163803d5e082b7702c50f6f367543d61ae877470ba801a3d5",
+  "generated_sha256": "2d44c44c0b86794dbfc6230e28462241553f2ab81a934514b1d51ab29a81bc28",
+  "png": {
+    "path": "artifacts/line-3/wall-v19.png",
+    "format": "PNG",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "bytes": 4032396,
+    "sha256": "d2017fe05adae98b57795940c65757360ee096d489aa0c8a245e92cb869aec9d"
+  },
+  "jpeg": {
+    "path": "dist/line-3/39.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 71108,
+    "sha256": "58876cb515c53d99fc310d0b399fa20f2154a888c69f4eeb863bc1d4a9f679b0"
+  },
+  "preservation": {
+    "changed_pixels": 1182,
+    "changed_bounds": [
+      777,
+      1185,
+      888,
+      1232
+    ],
+    "outside_rectangle_changed_pixels": 0,
+    "rectangle": [
+      775,
+      1184,
+      889,
+      1234
+    ]
+  },
+  "image_tool": "installed image edit tool; selected pigment transferred to unchanged ancestor",
+  "visual_review_completed": true,
+  "unmet_visual_requirements": [],
+  "visual_limitations": [
+    "New small dark pigment is faint at thumbnail size; local review only."
+  ]
+}

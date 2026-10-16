@@ -1,0 +1,1 @@
+"""Source-only child module."""
