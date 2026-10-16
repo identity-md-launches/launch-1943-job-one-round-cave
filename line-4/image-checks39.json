@@ -1,0 +1,51 @@
+{
+  "ancestor_sha256": "7b39817bfde4e32831af7a877cb564dc40ed2ecd63058e4df4641a83072c672a",
+  "generated_candidate_sha256": "fe07e0d9b57bce2a5be235bc7ace7379eabed6273b71feb775c73d0d04f63f9c",
+  "method": "Built-in imagegen edit; extracted generated charcoal/ochre silhouette and placed it on bare rock. Candidate consumed in place.",
+  "source_crop": [
+    790,
+    200,
+    893,
+    299
+  ],
+  "png": {
+    "paths": [
+      "artifacts/line-4/wall-v19.png",
+      "artifacts/line-4/wall.png"
+    ],
+    "format": "PNG",
+    "mode": "RGB",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 4066029,
+    "sha256": "b9de39a8803bca8403c12f1bf19d89e9af81833d610edffc039b22e999393e32"
+  },
+  "jpeg": {
+    "path": "dist/line-4/39.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 74464,
+    "sha256": "660dc895584605e8172e48cdf6807ad720b8c5b1ed05c0e05218450637646dfc"
+  },
+  "preservation": {
+    "rectangle": [
+      990,
+      185,
+      1093,
+      284
+    ],
+    "changed_pixels": 2775,
+    "outside_rectangle_changed_pixels": 0
+  },
+  "visual_review_completed": true,
+  "unmet_visual_requirements": [],
+  "visual_review": "Opened final full PNG and 512px JPEG. All ancestor marks and Pepe figures remain. Four figure hands and the upper handprint retain five digits each. No hands added. No text, numbers, logos, borders or prohibited symbols observed. Warm rock, cracks, light and framing preserved.",
+  "visual_limitations": [
+    "The small three-pair pebble motif is faint at JPEG preview size. Local review is not independent visual certification."
+  ]
+}

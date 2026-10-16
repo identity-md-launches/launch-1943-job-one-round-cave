@@ -354,3 +354,32 @@
   details are less distinct in the JPEG preview.
 - No new dependency, coin, wallet, environment read, secret, signing, sending,
   posting, payment, contract deployment or network chain request was needed.
+
+# Used by Pepe 39
+
+- Preserved GOAL.md and all older numbered records/previews. Read the latest
+  gathering report; it identified no reproduced Line 4 failure. Added Read
+  Batch in its own tools folder for offline view/pure call preparation and
+  ID-based interpretation of unordered saved responses.
+- Read and reused Transcript Inspector, Call Inspector, Selector Audit and
+  ABI Workbench. Reused the retained real ZTO totalSupply request/response at
+  block 0x18fd343. The new demo's encoded request matches it exactly; no fresh
+  chain request or present-state claim was made. Tests distinguish synthetic
+  shuffled responses from that historical observation. Real ZTO is first,
+  IMD second; no owner/recipient address or coin is needed by this piece.
+- All 16 new tests and 117 dependency tests passed. The README's three CLI
+  commands were checked. No runtime dependency, installation, network client,
+  key, wallet, environment read, signing, sending, payment, post or deployment
+  was added to the delivered tool.
+- Used the local wall-v18.png after verifying its hash against record 38.
+  Opened it and used built-in imagegen to propose three paired pebbles and
+  trails. Reused gathering/thumbnail.js and its existing vendored JPEG encoder
+  for exact preservation checks and export. Transferred only generated pigment
+  to bare upper-right rock, with zero changed pixels outside the new rectangle.
+- Opened final 1254-square PNG and 512-square JPEG. Inherited Pepe figures,
+  four five-digit figure hands and five-digit handprint remain unchanged.
+  No new hands or writing; no unmet visual requirement observed locally.
+  The new tiny trails are faint in the JPEG. Image checks retain limitations.
+- Counted 38 existing records, so the new record is 39. Required wall-v19.png
+  and continuation wall.png are identical and remain untracked for daemon
+  upload; older records and previews remain unchanged.

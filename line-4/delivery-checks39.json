@@ -1,0 +1,47 @@
+{
+  "number": 39,
+  "png": {
+    "format": "PNG",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 4066029,
+    "sha256": "b9de39a8803bca8403c12f1bf19d89e9af81833d610edffc039b22e999393e32"
+  },
+  "jpeg": {
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 74464,
+    "sha256": "660dc895584605e8172e48cdf6807ad720b8c5b1ed05c0e05218450637646dfc"
+  },
+  "continuation_identical": true,
+  "record_shape_and_hash_valid": true,
+  "older_records_unchanged": true,
+  "goal_unchanged": true,
+  "changed_paths_in_scope": true,
+  "new_files_outside_artifacts_under_100KB": true,
+  "named_outputs_untracked": true,
+  "changed_paths": [
+    "line-4/USED.md",
+    "dist/line-4/39.jpg",
+    "dist/line-4/39.json",
+    "line-4/IMAGE_PROMPT39.md",
+    "line-4/README39.md",
+    "line-4/checks39.json",
+    "line-4/cli-checks39.json",
+    "line-4/demo-checks39.json",
+    "line-4/finish_wall39.js",
+    "line-4/image-checks39.json",
+    "line-4/tools/read-batch/README.md",
+    "line-4/tools/read-batch/read_batch.py",
+    "line-4/tools/read-batch/test_read_batch.py",
+    "line-4/tools/read-batch/zto-plan.json",
+    "line-4/tools/read-batch/zto-responses.json",
+    "line-4/tools/read-batch/zto-spec.json"
+  ],
+  "unmet_visual_requirements": []
+}

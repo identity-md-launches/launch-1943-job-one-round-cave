@@ -1,0 +1,11 @@
+{
+  "block": "0x18fd343",
+  "calls": [
+    {
+      "id": 3,
+      "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+      "function": "totalSupply()",
+      "args": []
+    }
+  ]
+}

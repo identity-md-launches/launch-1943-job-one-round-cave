@@ -1,0 +1,17 @@
+{
+  "schema": "read-batch-plan/v1",
+  "requests": [
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+          "data": "0x18160ddd"
+        },
+        "0x18fd343"
+      ]
+    }
+  ]
+}

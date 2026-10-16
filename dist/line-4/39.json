@@ -1,0 +1,30 @@
+{
+  "name": "The Returning Pebbles",
+  "image": "https://api.imd.fun/artifacts/b9de39a8803bca8403c12f1bf19d89e9af81833d610edffc039b22e999393e32",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Ice"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 4"
+    },
+    {
+      "trait_type": "Number",
+      "value": 39
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Read Batch"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Three pairs of pebbles follow crooked trails back to their origins."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Offline ABI calldata encoding and return decoding"
+    }
+  ]
+}

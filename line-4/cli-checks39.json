@@ -1,0 +1,167 @@
+[
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/read-batch/read_batch.py",
+      "demo"
+    ],
+    "exit": 0,
+    "output": {
+      "plan": {
+        "schema": "read-batch-plan/v1",
+        "requests": [
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+                "data": "0x18160ddd"
+              },
+              "0x18fd343"
+            ]
+          }
+        ]
+      },
+      "review": {
+        "schema": "read-batch-review/v1",
+        "status": "decoded",
+        "request_count": 1,
+        "response_count": 1,
+        "block_identifiers": [
+          "0x18fd343"
+        ],
+        "results": [
+          {
+            "schema": "transcript-inspector/v1",
+            "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+            "block": "0x18fd343",
+            "request_id": 3,
+            "calldata_bytes": 4,
+            "call": {
+              "schema": "call-inspector/v1",
+              "calldata_bytes": 4,
+              "function_count": 1,
+              "selector": "0x18160ddd",
+              "status": "decoded",
+              "candidates": [
+                {
+                  "abi_index": 0,
+                  "signature": "totalSupply()"
+                }
+              ],
+              "signature": "totalSupply()",
+              "abi_index": 0,
+              "arguments": []
+            },
+            "return_data_bytes": 32,
+            "status": "decoded",
+            "outputs": [
+              {
+                "name": "supply",
+                "type": "uint256",
+                "value": 1000000000000000000000000000
+              }
+            ]
+          }
+        ],
+        "limitations": "Offline supplied ABI and response interpretation; no chain identity, freshness, authenticity or common-state proof. Tags may resolve to different blocks."
+      },
+      "evidence": "Historical ZTO example retained by Transcript Inspector; no fresh RPC request."
+    },
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/read-batch/read_batch.py",
+      "prepare",
+      "--abi",
+      "line-4/tools/transcript-inspector/zto-total-supply-abi.json",
+      "--spec",
+      "line-4/tools/read-batch/zto-spec.json"
+    ],
+    "exit": 0,
+    "output": {
+      "schema": "read-batch-plan/v1",
+      "requests": [
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+              "data": "0x18160ddd"
+            },
+            "0x18fd343"
+          ]
+        }
+      ]
+    },
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/read-batch/read_batch.py",
+      "inspect",
+      "--abi",
+      "line-4/tools/transcript-inspector/zto-total-supply-abi.json",
+      "--plan",
+      "line-4/tools/read-batch/zto-plan.json",
+      "--responses",
+      "line-4/tools/read-batch/zto-responses.json"
+    ],
+    "exit": 0,
+    "output": {
+      "schema": "read-batch-review/v1",
+      "status": "decoded",
+      "request_count": 1,
+      "response_count": 1,
+      "block_identifiers": [
+        "0x18fd343"
+      ],
+      "results": [
+        {
+          "schema": "transcript-inspector/v1",
+          "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+          "block": "0x18fd343",
+          "request_id": 3,
+          "calldata_bytes": 4,
+          "call": {
+            "schema": "call-inspector/v1",
+            "calldata_bytes": 4,
+            "function_count": 1,
+            "selector": "0x18160ddd",
+            "status": "decoded",
+            "candidates": [
+              {
+                "abi_index": 0,
+                "signature": "totalSupply()"
+              }
+            ],
+            "signature": "totalSupply()",
+            "abi_index": 0,
+            "arguments": []
+          },
+          "return_data_bytes": 32,
+          "status": "decoded",
+          "outputs": [
+            {
+              "name": "supply",
+              "type": "uint256",
+              "value": 1000000000000000000000000000
+            }
+          ]
+        }
+      ],
+      "limitations": "Offline supplied ABI and response interpretation; no chain identity, freshness, authenticity or common-state proof. Tags may resolve to different blocks."
+    },
+    "stderr": ""
+  }
+]
